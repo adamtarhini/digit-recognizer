@@ -7,7 +7,7 @@ import io
 import base64
 
 app = Flask(__name__)
-model = keras.models.load_model('mnist_model.h5')  # ← add this!
+model = keras.models.load_model('mnist_model.h5')  
 
 @app.route('/')
 def home():
@@ -29,7 +29,7 @@ def predict():
     return jsonify({'digit': digit})
 
 if __name__ == '__main__':
-    app.run(debug=True)  # ← add this!from flask import Flask, request, jsonify, render_template
+    app.run(debug=True)  
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
@@ -38,7 +38,7 @@ import io
 import base64
 
 app = Flask(__name__)
-model = keras.models.load_model('mnist_model.h5')  # ← add this!
+model = keras.models.load_model('mnist_model.h5') 
 
 @app.route('/')
 def home():
@@ -61,4 +61,4 @@ def predict():
     return jsonify({'digit': digit})
 
 if __name__ == '__main__':
-    app.run(debug=True)  # ← add this!
+    app.run(debug=True) 
